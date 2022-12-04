@@ -8,16 +8,17 @@ window.onload = () =>{
 
     // Define context    
     const ctx = bgCanvas.getContext('2d');
-
-    // const Snoweffect = new Snoweffect();
-
+    
     // Get the image and show it
     let src = 'snowflake.svg';
     const snowflake = new Image();
     snowflake.src = src;
     snowflake.onload = ()=>{
+        // Create the snow effect
         const snowEffect = new Snoweffect(ctx, bgCanvas.width, bgCanvas.height, snowflake);
+        // initiate and define number of snowflakes as param. If not set define by window width:
         snowEffect.init();
+        // Starte the actual animation.
         snowEffect.animate();
     }
 }
@@ -55,7 +56,6 @@ class Snoweffect {
     }
     init(numberOfFlakes){
         if(numberOfFlakes === undefined){
-            console.log(this.width);
             if(this.width < 675){
                 numberOfFlakes = 10;
             }else if(this.width < 800){

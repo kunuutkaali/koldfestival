@@ -2,8 +2,8 @@ window.onload = () =>{
     // Define, create a canvas and prepend it to body when the window has been loaded
     const bgCanvas = document.createElement('canvas');
     bgCanvas.id = 'bgCanvas';
-    bgCanvas.width = window.innerWidth;
-    bgCanvas.height = window.innerHeight;
+    bgCanvas.width = document.body.scrollWidth;
+    bgCanvas.height = document.body.scrollHeight;
     document.body.prepend(bgCanvas);
 
     // Define context    
@@ -13,15 +13,21 @@ window.onload = () =>{
     let src = 'snowflake.svg';
     const snowflake = new Image();
     snowflake.src = src;
+    const snowEffect = new Snoweffect(ctx, bgCanvas.width, bgCanvas.height, snowflake);
     snowflake.onload = ()=>{
         // Create the snow effect
-        const snowEffect = new Snoweffect(ctx, bgCanvas.width, bgCanvas.height, snowflake);
         // initiate and define number of snowflakes as param. If not set define by window width:
         snowEffect.init();
         // Starte the actual animation.
         snowEffect.animate();
     }
+    window.addEventListener('resize', ()=>{
+        bgCanvas.width = window.innerWidth;
+        bgCanvas.height = document.body.scrollHeight;
+        snowEffect.reset(bgCanvas.width, bgCanvas.height);
+    })
 }
+// Define snowflake object
 class Snowflake {
     constructor(effect, img){
         this.img = img;
@@ -45,7 +51,7 @@ class Snowflake {
     }
 }
 
-// Snow effect
+// Define Snoweffect object
 class Snoweffect {
     constructor(ctx, width, height, flakeImage){
         this.context = ctx;
@@ -54,18 +60,11 @@ class Snoweffect {
         this.height = height;
         this.flakes = [];
     }
-    init(numberOfFlakes){
-        if(numberOfFlakes === undefined){
-            if(this.width < 675){
-                numberOfFlakes = 10;
-            }else if(this.width < 800){
-                numberOfFlakes = 25;
-            }else if(this.width < 1800){
-                numberOfFlakes = 35;
-            }else{
-                numberOfFlakes = 50;
-            }
-        }
+    init(numberOfFlakes){        
+        this.flakes = [];
+        // If number of flakes is not set, set it by the width and height of effect
+        numberOfFlakes = Math.floor(this.width * this.height / 25000);
+        console.log('number of flakes', numberOfFlakes);
         for(let i = 0; i < numberOfFlakes; i++){
             this.flakes.push(new Snowflake(this, this.flakeImage))
         }
@@ -81,5 +80,10 @@ class Snoweffect {
         this.update();
         this.draw(this.context);
         requestAnimationFrame(this.animate.bind(this));
+    }
+    reset(width, height){
+        this.width = width;
+        this.height = height;
+        this.init()
     }
 }

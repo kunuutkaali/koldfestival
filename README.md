@@ -1,2 +1,2 @@
 # koldfestival
-Homepage for Kold Festival
+Udvikling side for Kold Festival 

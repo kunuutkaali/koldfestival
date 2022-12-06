@@ -1,4 +1,4 @@
-# koldfestival
+# Koldfestival
 Dev page for Kold festival
 
 ## JS

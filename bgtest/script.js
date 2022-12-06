@@ -37,7 +37,7 @@ class Snowflake {
         this.effect = effect;
         this.x = Math.random() * this.effect.width - this.width * 0.5;
         this.y = Math.random() * this.effect.height - this.width;
-        this.speedY = 4 * this.scale;
+        this.speedY = 2 * this.scale;
     }
     update(){
         if(this.y > this.effect.height){
@@ -63,7 +63,7 @@ class Snoweffect {
     init(numberOfFlakes){        
         this.flakes = [];
         // If number of flakes is not set, set it by the width and height of effect
-        numberOfFlakes = Math.floor(this.width * this.height / 25000);
+        numberOfFlakes = Math.floor(this.width * this.height / 50000);
         console.log('number of flakes', numberOfFlakes);
         for(let i = 0; i < numberOfFlakes; i++){
             this.flakes.push(new Snowflake(this, this.flakeImage))

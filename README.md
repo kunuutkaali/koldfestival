@@ -3,7 +3,7 @@ Dev page for Kold festival
 
 ## JS
 The fellowing element will be develop with js:
-- Snowfaflake effect
+- Snowflake effect
 - Displaying individual artists page content
 - Countdown element
 ## JSON

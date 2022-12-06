@@ -37,7 +37,7 @@ class Snowflake {
         this.effect = effect;
         this.x = Math.random() * this.effect.width - this.width * 0.5;
         this.y = Math.random() * this.effect.height - this.width;
-        this.speedY = 2 * this.scale;
+        this.speedY = 0.95 * this.scale;
     }
     update(){
         if(this.y > this.effect.height){

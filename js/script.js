@@ -6,16 +6,16 @@ const createSnowEffect = () =>{
 
     // Set the source for image
     flakeImage.src = "../images/assets/snowflake.svg";
+    
+    // Create canvas element and set attributes: id, width, height. Then prepend to body
+    const bgCanvas = document.createElement('canvas');
+    bgCanvas.id = 'snoweffect-bg';
+    bgCanvas.width = document.body.scrollWidth;
+    bgCanvas.height = document.body.scrollHeight;
+    bgCanvas.style = 'position:absolute;';
 
     // Once image is loaded, create canvas, get 2d context from canvas and create snow effect instance and run the animation
     flakeImage.onload = () =>{
-
-        // Create canvas element and set attributes: id, width, height. Then prepend to body
-        const bgCanvas = document.createElement('canvas');
-        bgCanvas.id = 'snoweffect-bg';
-        bgCanvas.width = document.body.scrollWidth;
-        bgCanvas.height = document.body.scrollHeight;
-        bgCanvas.style = 'position:absolute;';
         document.body.prepend(bgCanvas);
 
         // Get the context from bgCanvas

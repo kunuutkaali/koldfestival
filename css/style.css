@@ -1,0 +1,27 @@
+:root {
+    /* Basic color theme: */
+    --color-1:#2EFEB3;
+    --color-2:#98E8FF;
+    --color-3:#FD0079;
+    /* Dark colors: */
+    --main-bg-color: #233036;
+    --darker-bg-color:#161D21;
+    --footerBG: #1E1318;
+    --light-color:#E3E3E3;
+}
+html, body{
+    /* basic reset of html and body */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+footer h6{
+    margin-bottom:0;
+}
+body{
+    background:var(--main-bg-color);
+    color:var(--light-color);
+}
+a{
+    color:grey;
+}

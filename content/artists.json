@@ -1,14 +1,69 @@
 {
     "artists": [
         {
-            "name": "Artiste numero uno",
-            "description": "Le Artiste conjanera bon cirku porr favorr",
-            "img": "https://artist.com/image1"
+            "name": "Agnes Hartwich",
+            "spotifyId": "5dannHlHirCopWH6vT2DpX"
         },
         {
-            "name": "Falling monkeys",
-            "description": "This british group is amazingly loud and schreecgyu",
-            "img": "images/artist1.webp"
+            "name":"Astrid Engberg",
+            "text":"Sangerinden og produceren Astrid Engberg er indbegrebet af moderne jazz anno 2023. For hun bygger de smukkeste broer mellem alverdens musikgenrer. ...",
+            "spotifyId":"1aCZzByicOHcS6WpNPwqXV"
+        },
+        {
+            "name": "Chopper",
+            "spotifyId": "5Gh6G0svQss9izo01sYHCs"
+        },
+        {
+            "name":"Cumbian Colors",
+            "spotifyId":"4MLdFWfIzk10DTDnTti05e"
+        },
+        {
+            "name":"Danser Med Piger",
+            "spotifyId":"0OhwwB6b7ugDTS41UT4YJS"
+        },
+        {
+            "name":"Djämes Braun",
+            "spotifyId":"3kI2qtr3zCuB4YbDl5yvkh"
+        },
+        {
+            "name":"Elektrisk Ål",
+            "spotifyId":"73UbTOKS7e146PBWxFQrff"
+        },
+        {
+            "name":"Evil House Party",
+            "spotifyId":"4dcXQW2aINb1lAMHKQa2hB"
+        },
+        {
+            "name":"Ipek Yulo",
+            "spotifyId":"5TIy4svVCpewV2guElzwB7"
+        },
+        {
+            "name":"Kamma",
+            "spotifyId":"5pUS7wijCmJYhSLasDlLLj"
+        },
+        {
+            "name":"SULKA",
+            "spotifyId":"467BSFPrqZP3HT6dXzsBqv"
+        },
+        {
+            "name":"SUNI",
+            "spotifyId":"2KHa9hXUmX3jfm5YWm7LwC"
+        },
+        {
+            "name":"Szim",
+            "spotifyId":"41x4mjrHp3B0fLf7rFktcT"
+        },
+        {
+            "name":"Tettix Hexer",
+            "spotifyId":"3CPIQ7xQ4flFItDS8f7wqa"
+        },
+        {
+            "name":"The Physics House Band",
+            "spotifyId":"30EilmonVXftR1pWoALezP"
+        },
+        {
+            "name":"Ude Af Kontrol",
+            "spotifyId":"2ZbyyCS8KLKsuoNlxc76Ev"
         }
     ]
 }

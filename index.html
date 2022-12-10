@@ -18,14 +18,15 @@
 </head>
 <body>
     <nav>
-        <a id="headerlogo" href="/"><img src="images/assets/snowflake.svg" alt=""></a>
-            <ul>
-                <li><a href="artister.html">Artister</a></li>
-                <li><a href="program-23.html">Program</a></li>
-                <li><a href="baerdygtighed.html">Bærdygtighed</a></li>
-                <li><a href="om-kold-festival.html">Om KOLD</a></li>
-            </ul>
-        <a href="https://tix.dk/da/musikkolding/buyingflow/tickets/15815/23040">Billetter</a>
+        <section id="gridLeft">
+            <a id="headerlogo" href="/"><img src="images/assets/snowflake.svg" alt=""></a>
+            <ul><a href="artister.html">Artister</a></ul>
+            <ul><a href="program-23.html">Program</a></ul>
+            <ul><a href="baerdygtighed.html">Bærdygtighed</a></ul>
+            <ul><a href="om-kold-festival.html">Om KOLD</a></ul>
+            <button id="billet"><a href="https://tix.dk/da/musikkolding/buyingflow/tickets/15815/23040">Billetter</a></button>
+        </section>
+
     </nav>
     <main>
         <header>
@@ -72,51 +73,53 @@
     </section>
     <section id="billeter">
         <h2>Billetter</h2>
-        <div class="price col">
-            <ul>
-                <li class="date">Fredag</li>
-                <li>Studerende og under 25 år</li>
-                <li class="price">100,00 kr.</li>
-                <li>Voksne</li>
-                <li class="price">150,00 kr.</li>
-                <li>Giver adgang til :
-                    <ul>
-                        <li>Alle koncerter fredag</li>
-                        <li>Alle talks fredag</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="price col">
-            <ul>
-                <li class="date">Partout</li>
-                <li>Studerende og under 25 år</li>
-                <li class="price">100,00 kr.</li>
-                <li>Voksne</li>
-                <li class="price">150,00 kr.</li>
-                <li>Giver adgang til :
-                    <ul>
-                        <li>Alle koncerter fredag samt <em>Ude af kontrol på godset</em></li>
-                        <li>Alle chillspots og talks alle dage</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="price col">
-            <ul>
-                <li class="date">Lørdag</li>
-                <li>Studerende og under 25 år</li>
-                <li class="price">100,00 kr.</li>
-                <li>Voksne</li>
-                <li class="price">150,00 kr.</li>
-                <li>Giver adgang til : 
-                    <ul>
-                        <li>Alle koncerter fredag undtagen <em>Ude af kontrol på godset</em></li>
-                        <li>Alle chillspots og talks alle dage</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <section id="days">
+            <div class="pricecol">
+                <ul>
+                    <h3 class="date">Fredag</h3>
+                    <p>Studerende og under 25 år</p>
+                    <h3 class="price">100,00 kr.</h3>
+                    <p>Voksne</p>
+                    <h3 class="price">150,00 kr.</h3>
+                    <li>Giver adgang til :
+                        <ul>
+                            <li>Alle koncerter fredag</li>
+                            <li>Alle talks fredag</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pricecol">
+                <ul>
+                    <h3 class="date">Partout</h3>
+                    <p>Studerende og under 25 år</p>
+                    <li class="price">100,00 kr.</li>
+                    <p>Voksne</p>
+                    <h3 class="price">150,00 kr.</h3>
+                    <li>Giver adgang til :
+                        <ul>
+                            <li>Alle koncerter fredag samt <em>Ude af kontrol på godset</em></li>
+                            <li>Alle chillspots og talks alle dage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pricecol">
+                <ul>
+                    <h3 class="date">Lørdag</h3>
+                    <p>Studerende og under 25 år</p>
+                    <h3 class="price">100,00 kr.</h3>
+                    <p>Voksne</p>
+                    <h3 class="price">150,00 kr.</h3>
+                    <li>Giver adgang til : 
+                        <ul>
+                            <li>Alle koncerter fredag undtagen <em>Ude af kontrol på godset</em></li>
+                            <li>Alle chillspots og talks alle dage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </section>
     <footer>
         <div>

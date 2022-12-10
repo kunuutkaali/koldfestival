@@ -15,6 +15,22 @@ html, body{
     padding:0;
     box-sizing: border-box;
 }
+nav{
+    height: 79px;
+    background:var(--darker-bg-color);
+}
+#headerlogo>img{
+    margin-top: 9px;
+    width: 35px;
+    height: 31px;
+}
+#gridLeft{
+    display: grid;
+    width: 539px;
+    height: 49px;
+    grid-template-columns: 10% 90px 103px 152px 95px 100%;
+    justify-content: center;
+}
 footer h6{
     margin-bottom:0;
 }
@@ -27,4 +43,16 @@ a{
 }
 #billeter {
     background:var(--darker-bg-color);
+}
+#days{
+    display: grid;
+    grid-template-columns: 398px 398px 398px;
+    justify-content: center;
+}
+.pricecol{
+    display: grid;
+    height: 326px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30% 30%;
 }

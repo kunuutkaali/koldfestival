@@ -12,7 +12,7 @@ const createSnowEffect = () =>{
     bgCanvas.id = 'snoweffect-bg';
     bgCanvas.width = document.body.scrollWidth;
     bgCanvas.height = document.body.scrollHeight;
-    bgCanvas.style = 'position:absolute;';
+    bgCanvas.style = 'position:absolute; z-index:-5;';
 
     // Once image is loaded, create canvas, get 2d context from canvas and create snow effect instance and run the animation
     flakeImage.onload = () =>{

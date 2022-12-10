@@ -2,20 +2,24 @@
     "artists": [
         {
             "name": "Agnes Hartwich",
-            "spotifyId": "5dannHlHirCopWH6vT2DpX"
+            "spotifyId": "5dannHlHirCopWH6vT2DpX",
+            "image":"/images/agnes_hartwich_1x1.webp"
         },
         {
             "name":"Astrid Engberg",
             "text":"Sangerinden og produceren Astrid Engberg er indbegrebet af moderne jazz anno 2023. For hun bygger de smukkeste broer mellem alverdens musikgenrer. ...",
-            "spotifyId":"1aCZzByicOHcS6WpNPwqXV"
+            "spotifyId":"1aCZzByicOHcS6WpNPwqXV",
+            "image":"/images/astrid_engberg_1x1.webp"
         },
         {
             "name": "Chopper",
-            "spotifyId": "5Gh6G0svQss9izo01sYHCs"
+            "spotifyId": "5Gh6G0svQss9izo01sYHCs",
+            "image":"/images/chopper_1x1.webp"
         },
         {
             "name":"Cumbian Colors",
-            "spotifyId":"4MLdFWfIzk10DTDnTti05e"
+            "spotifyId":"4MLdFWfIzk10DTDnTti05e",
+            "image":"cumbian_colors_1x1.webp"
         },
         {
             "name":"Danser Med Piger",

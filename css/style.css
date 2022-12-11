@@ -29,7 +29,9 @@ nav{
     width: 539px;
     height: 49px;
     grid-template-columns: 10% 90px 103px 152px 95px 100%;
-    justify-content: center;
+}
+header{
+    text-align: center;
 }
 footer h6{
     margin-bottom:0;
@@ -44,6 +46,10 @@ a{
 #billeter {
     background:var(--darker-bg-color);
 }
+#billeter>h2{
+    padding-top: 25px;
+    text-align: center;
+}
 #days{
     display: grid;
     grid-template-columns: 398px 398px 398px;
@@ -52,7 +58,12 @@ a{
 .pricecol{
     display: grid;
     height: 326px;
-    justify-content: center;
-    display: grid;
+    text-align: center;
     grid-template-rows: 30% 30% 30% 30% 30%;
+}
+#billeter>button{
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+    background:var(--color-1) ;
 }

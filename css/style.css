@@ -7,6 +7,7 @@
     --main-bg-color: #233036;
     --darker-bg-color:#161D21;
     --footerBG: #1E1318;
+    --talksbox: #D9D9D9;
     --light-color:#E3E3E3;
 }
 html, body{
@@ -48,6 +49,15 @@ header{
 #small_Artist_List>.row2>img{
     width: 213px;
 }
+#talksList{
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    place-items: center;
+}
+#talk_row{
+    display: grid;
+    grid-template-columns: 20% 20%;
+}
 footer h6{
     margin-bottom:0;
 }
@@ -61,8 +71,7 @@ a{
 #billeter {
     background:var(--darker-bg-color);
 }
-#billeter>h2{
-    padding-top: 25px;
+.centerText{
     text-align: center;
 }
 #days{

@@ -71,7 +71,10 @@ body{
     color:var(--light-color);
 }
 a{
-    color:grey;
+    color: #FFFFFF;
+}
+button>a{
+    color:var(--darker-bg-color) ;
 }
 #billeter {
     background:var(--darker-bg-color);
@@ -105,4 +108,8 @@ article{
 }
 footer{
     background:var(--footerBG) ;
+}
+#footerGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }

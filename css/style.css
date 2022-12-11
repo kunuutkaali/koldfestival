@@ -82,3 +82,9 @@ a{
     border-radius: 5px;
     background:var(--color-1) ;
 }
+article{
+    text-align: center;
+}
+footer{
+    background:var(--footerBG) ;
+}

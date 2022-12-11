@@ -46,6 +46,11 @@ header{
 #small_Artist_List>.row1>img{
     width: 213px;
 }
+#small_Artist_List>.row2{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 28px;
+}
 #small_Artist_List>.row2>img{
     width: 213px;
 }
@@ -73,6 +78,10 @@ a{
 }
 .centerText{
     text-align: center;
+}
+.centerBox{
+    display: flex;
+    justify-content: center;
 }
 #days{
     display: grid;

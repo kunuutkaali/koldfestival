@@ -40,20 +40,3 @@ const createSnowEffect = () =>{
 }
 // Run function create and Animate SnowEffect
 createSnowEffect();
-
-let content = {
-    "artists":
-    [
-        {
-            "name": "Artiste numero uno",
-            "description": "Le Artiste conjanera bon cirku porr favorr",
-            "img": "https://artist.com/image1"
-        },
-        {
-            "name": "Falling monkeys",
-            "description": "This british group is amazingly loud and schreecgyu",
-            "img": "images/artist1.webp"
-        }
-    ]
-}
-console.log(JSON.stringify(content));

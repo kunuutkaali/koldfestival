@@ -2,6 +2,12 @@
 @font-face {
     font-family: 'HelveticaNeue';
     src:  url('fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src:  url('fonts/HelveticaNeueLTStd-Blk.otf') format('opentype');
+    font-weight: bolder;
 }
 :root {
     /* Basic color theme: */

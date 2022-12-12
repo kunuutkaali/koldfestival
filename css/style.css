@@ -23,14 +23,25 @@ html, body{
     width: 100%;
     position: fixed;
     background:var(--darker-bg-color);
+    display: grid;
+    grid-template: auto;
 }
-
-/* End of navigation */
-#headerlogo>img{
+#mainNav{
+    display:flex;
+    list-style: none;
+}
+#mainNav > li > a{
+    text-decoration: none;
+    padding:8px 16px;
+    text-transform: uppercase;
+}
+#headerlogo{
     margin-top: 9px;
     width: 35px;
     height: 31px;
 }
+
+/* End of navigation */
 #headerGrid{
     display: grid;
     width: 539px;

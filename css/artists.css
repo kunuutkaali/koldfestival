@@ -1,0 +1,34 @@
+#artistBox{
+    display: flex;
+    justify-content: center;
+}
+#artistList{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    column-gap: 28px;
+    place-items: center;
+}
+#artistList>.row3>img{
+    width: 213px;
+}
+#artistList>.row4>img{
+    width: 213px;
+}
+#artistList>.row5>img{
+    width: 213px;
+}
+#artistList>.row3{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 28px;
+}
+#artistList>.row4{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    row-gap: 28px;
+}
+#artistList>.row5{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    row-gap: 28px;
+}

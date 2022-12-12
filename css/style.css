@@ -1,3 +1,8 @@
+/* Fonts */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src:  url('fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
 :root {
     /* Basic color theme: */
     --color-1:#2EFEB3;
@@ -10,21 +15,31 @@
     --talksbox: #D9D9D9;
     --light-color:#E3E3E3;
 }
+*{
+    box-sizing: border-box;}
 html, body{
     /* basic reset of html and body */
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'HelveticaNeue';
 }
+
+a{
+    font-family:'HelveticaNeue';
+    color: var(--light-color);
+}
+
 /* Top header */
 #topHeader{
     top: 0;
-    height: 79px;
+    min-height: 79px;
     width: 100%;
     position: fixed;
     background:var(--darker-bg-color);
-    display: grid;
-    grid-template: auto;
+    display: flex;
+    align-items: center;
+    padding:0 50px 0 50px;
 }
 #mainNav{
     display:flex;
@@ -35,22 +50,31 @@ html, body{
     padding:8px 16px;
     text-transform: uppercase;
 }
-#headerlogo{
+#topHeader > .billetKnap{
+    margin-left:auto;
+}
+#headerLogo{
     margin-top: 9px;
     width: 35px;
     height: 31px;
 }
 
+
 /* End of navigation */
-#headerGrid{
-    display: grid;
-    width: 539px;
-    height: 49px;
-    grid-template-columns: 10% 90px 103px 152px 95px 100%;
+/* Knapper - links */
+
+.billetKnap{
+    text-decoration: none;
+    background:var(--color-1);
+    color:var(--main-bg-color);
+    padding:15px 20px;
+    border:solid 2px var(--main-bg-color);
+    border-radius:5px;
 }
-#headerGrid>#billet{
-    background:var(--color-1) ;
-}
+
+/* End og knapper - links */
+
+
 header{
     text-align: center;
 }
@@ -84,9 +108,6 @@ footer h6{
 body{
     background:var(--main-bg-color);
     color:var(--light-color);
-}
-a{
-    color: #FFFFFF;
 }
 button>a{
     color:var(--darker-bg-color) ;

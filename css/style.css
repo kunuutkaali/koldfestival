@@ -17,6 +17,7 @@ html, body{
     box-sizing: border-box;
 }
 nav{
+    top: 0;
     height: 79px;
     width: 100%;
     position: fixed;

@@ -1,6 +1,7 @@
 #artistBox{
+    margin-top: 128px;
     display: flex;
-    justify-content: center;
+    width: 1180px;
 }
 #artistList{
     display: grid;

@@ -25,11 +25,14 @@ nav{
     width: 35px;
     height: 31px;
 }
-#gridLeft{
+#headerGrid{
     display: grid;
     width: 539px;
     height: 49px;
     grid-template-columns: 10% 90px 103px 152px 95px 100%;
+}
+#headerGrid>#billet{
+    background:var(--color-1) ;
 }
 header{
     text-align: center;
@@ -53,11 +56,6 @@ header{
 }
 #small_Artist_List>.row2>img{
     width: 213px;
-}
-#talksList{
-    display: grid;
-    grid-template-rows: 25% 25% 25%;
-    place-items: center;
 }
 #talk_row{
     display: grid;

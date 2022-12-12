@@ -20,6 +20,7 @@ const createSnowEffect = () =>{
 
         // Get the context from bgCanvas
         const ctx = bgCanvas.getContext('2d');
+        ctx.globalAlpha = 0.2;
 
         // Set the flake velocity and create the Snow effect instace:
         let speed = 0.95;

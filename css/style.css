@@ -16,13 +16,16 @@ html, body{
     padding:0;
     box-sizing: border-box;
 }
-nav{
+/* Top header */
+#topHeader{
     top: 0;
     height: 79px;
     width: 100%;
     position: fixed;
     background:var(--darker-bg-color);
 }
+
+/* End of navigation */
 #headerlogo>img{
     margin-top: 9px;
     width: 35px;

@@ -1,13 +1,18 @@
 #artistBox{
     margin-top: 128px;
-    display: flex;
+    display: grid;
     width: 1180px;
+    grid-template-rows: 5%
+}
+#artistBox>h1{
+    text-align: center;
 }
 #artistList{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     column-gap: 28px;
     place-items: center;
+    margin-top: 90px;
 }
 #artistList>.row3>img{
     width: 213px;

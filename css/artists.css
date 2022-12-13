@@ -15,12 +15,8 @@
 #artistList{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 28px;
+    column-gap: 3vh;
     place-items: center;
-    margin-top: 90px;
-}
-#artistList>.row3>img{
-    width: 213px;
 }
 #artistList>.row4>img{
     width: 213px;
@@ -29,12 +25,12 @@
     width: 213px;
 }
 #artistList>.row4{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    row-gap: 28px;
+    flex-direction: column;
+    display: flex;
+    row-gap: 3vh;
 }
 #artistList>.row5{
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    row-gap: 28px;
+    flex-direction: column;
+    display: flex;
+    row-gap: 3vh;
 }

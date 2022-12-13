@@ -286,7 +286,16 @@ footer h3{
 footer h6{
     text-align: center;
 }
-
+#footericonflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 4vh;
+}
+footer .FooterSocialIcon{
+    width: 25px;
+}
 /* FOOTER */
 footer{
     padding:50px 115px;

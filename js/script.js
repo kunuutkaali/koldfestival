@@ -11,8 +11,8 @@ const createSnowEffect = () =>{
     const bgCanvas = document.createElement('canvas');
     bgCanvas.id = 'snoweffect-bg';
     bgCanvas.width = document.body.scrollWidth;
-    bgCanvas.height = document.body.scrollHeight;
-    bgCanvas.style = 'position:absolute; z-index:-5;';
+    bgCanvas.height = window.innerHeight;
+    bgCanvas.style = 'position:fixed; z-index:-5;';
 
     // Once image is loaded, create canvas, get 2d context from canvas and create snow effect instance and run the animation
     flakeImage.onload = () =>{
@@ -33,8 +33,9 @@ const createSnowEffect = () =>{
         // Run the actual animation
         window.addEventListener('resize', ()=>{
             bgCanvas.width = document.body.scrollWidth;
-            bgCanvas.height = document.body.scrollHeight;
+            bgCanvas.height = window.innerHeight;
             snowEffect.reset(bgCanvas.width, bgCanvas.height);
+            ctx.globalAlpha = 0.2;
         })
     }
 }

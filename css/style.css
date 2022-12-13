@@ -9,6 +9,7 @@
     src:  url('fonts/HelveticaNeueLTStd-Blk.otf') format('opentype');
     font-weight: bolder;
 }
+
 :root {
     /* Basic color theme: */
     --color-1:#2EFEB3;
@@ -20,15 +21,20 @@
     --footerBG: #1E1318;
     --talksbox: #D9D9D9;
     --light-color:#E3E3E3;
+    --section-padding-top: 115px;
+    --section-padding-bottom: 115px;
 }
+
+
 /* basic Reset */
 *{box-sizing: border-box;}
+
+
+/* basic reset of html and body */
 html, body{
-    /* basic reset of html and body */
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'HelveticaNeue';
 }
 body{
     padding-top:80px;
@@ -36,7 +42,6 @@ body{
     color:var(--light-color);
 }
 a{
-    font-family:'HelveticaNeue';
     color: var(--light-color);
 }
 
@@ -59,8 +64,13 @@ a{
     text-decoration: none;
     padding:8px 16px;
     text-transform: uppercase;
+    font-family: 'HelveticaNeue', sans-serif;
+    margin-right:10px;
 }
-#topHeader > .billetKnap{
+#mainNav > li > a:hover{
+    border-bottom:var(--color-1) solid 2px;
+}
+#topHeader > .btn{
     margin-left:auto;
 }
 #headerLogo{
@@ -73,7 +83,8 @@ a{
 /* End of navigation */
 /* Knapper - links */
 
-.billetKnap{
+
+.btn{
     display:inline-block;
     text-decoration: none;
     background:var(--color-1);
@@ -81,9 +92,17 @@ a{
     padding:15px 20px;
     border:solid 2px var(--main-bg-color);
     border-radius:5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background:var(--main-bg-color);
+    color:var(--color-1);
+    border:solid 2px var(--color-1);
 }
 
 /* End og knapper - links */
+
+
 
 /* headers */
 header{
@@ -91,11 +110,14 @@ header{
 }
 /* End Of headers */
 
-/* Sections */
-/* Artists */
-#artist{
-}
 
+
+/* Sections */
+body > section{
+    padding-top:var(--section-padding-top);
+    padding-bottom:var(--section-padding-top);
+}
+/* Sections | Artists */
 #small_Artist_List{
     display: grid;
     width: 1180px;
@@ -113,50 +135,125 @@ header{
 #small_Artist_List>.row2>img{
     width: 213px;
 }
-/* talks */
-#talk_row{
-    display: grid;
-    grid-template-columns: 20% 20%;
-}
-/* Billetter */
-#billeter {
-    background:var(--darker-bg-color);
-}
-.pricecol{
-}
-#days{
-    display: grid;
-    grid-template-columns: 398px 398px 398px;
-    justify-content: center;
-}
-/* End of Sections */
-
-
-
-.centerText{
-    text-align: center;
-}
 .centerBox{
     display: flex;
     justify-content: center;
 }
+/* Sections |  talks */
+.talksGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.talksGrid > div{
+    padding:50px;
+}
+/* Sections |  Billetter */
+#billeter {
+    background:var(--darker-bg-color);
+    padding:50px;
+}
+#days{
+    max-width:1330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+/*  Sections | Counter */
+.counterGrid{
+    max-width:500px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.counterGrid > div{
+    border-right: var(--light-color) solid 2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counterGrid > div:last-child{
+    border:none;
+}
+.counterGrid > div > h3,
+.counterGrid > div > p{
+    margin:0;
+}
+/* End of Sections */
+
+
+/* Typography */
+body{
+    font-size:16px;
+    font-family: 'HelveticaNeue';
+}
+h2{
+    font-family:"HelveticaNeueBold", sans-serif;
+    font-weight:bold;
+    font-size:31.25px;
+    text-transform: uppercase;
+}
+h3{
+    font-family:"HelveticaNeueBold", sans-serif;
+    font-weight:bold;
+    font-size:25px;
+    text-transform: uppercase;
+}
+.centerText{
+    text-align: center;
+}
 article{
     text-align: center;
 }
-
-
-
+.boldText{
+    font-family:'HelveticaNeueBold', sans-serif;
+    font-weight:bold;
+}
+a{
+    font-family:'HelveticaNeue';
+}
+.btn{
+    font-family: 'HelveticaNeueBold', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* FOOTER Typography */
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color:var(--color-1);
+}
+footer h3{
+    color: var(--color-1);
+    margin:0;
+}
+footer h6{
+    text-align: center;
+}
 
 /* FOOTER */
 footer{
+    padding:50px 115px;
     background:var(--footerBG) ;
 }
 footer ul{
+    margin:0 0 25px 0;
+    padding:0 0 0 10px;
+    display:flex;
+    flex-direction: column;
     list-style-type: none;
+}
+footer ul > li{
+    margin-top:0.5em;
 }
 #footerGrid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+#footerGrid > div:last-child{
+    text-align: right;
 }
 footer h6{
     margin-bottom:0;

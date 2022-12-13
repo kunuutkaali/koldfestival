@@ -123,6 +123,7 @@ body > section{
     width: 1180px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     place-items: center;
+    margin-bottom: 95px;
 }
 #small_Artist_List>.row1>img{
     width: 213px;

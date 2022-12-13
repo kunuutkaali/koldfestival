@@ -59,6 +59,7 @@ a{
 #mainNav{
     display:flex;
     list-style: none;
+    padding:0;
 }
 #mainNav > li > a{
     text-decoration: none;
@@ -74,9 +75,8 @@ a{
     margin-left:auto;
 }
 #headerLogo{
-    margin-top: 9px;
-    width: 35px;
-    height: 31px;
+    max-height:33px;
+    width:auto;
 }
 
 
@@ -117,6 +117,8 @@ body > section{
     padding-top:var(--section-padding-top);
     padding-bottom:var(--section-padding-top);
 }
+
+
 /* Sections | Artists */
 #small_Artist_List{
     display: grid;
@@ -140,6 +142,8 @@ body > section{
     display: flex;
     justify-content: center;
 }
+
+
 /* Sections |  talks */
 .talksGrid{
     display: grid;
@@ -148,6 +152,8 @@ body > section{
 .talksGrid > div{
     padding:50px;
 }
+
+
 /* Sections |  Billetter */
 #billeter {
     background:var(--darker-bg-color);
@@ -159,6 +165,8 @@ body > section{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
 }
+
+
 /*  Sections | Counter */
 .counterGrid{
     max-width:500px;
@@ -257,6 +265,6 @@ footer ul > li{
     text-align: right;
 }
 footer h6{
-    margin-bottom:0;
+    margin:0;
 }
     /* END of Footer */

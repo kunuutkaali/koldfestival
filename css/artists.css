@@ -9,8 +9,8 @@
 }
 #artistList{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    column-gap: 28px;
+    grid-template-columns: 20% 20% 20% 20% ;
+    column-gap: 18px;
     place-items: center;
     margin-top: 90px;
 }
@@ -22,11 +22,6 @@
 }
 #artistList>.row5>img{
     width: 213px;
-}
-#artistList>.row3{
-    display: grid;
-    grid-template-rows: 33% 33% 33%;
-    row-gap: 28px;
 }
 #artistList>.row4{
     display: grid;

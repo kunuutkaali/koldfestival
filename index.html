@@ -42,26 +42,36 @@
         </article>
     </main>
     <section id="artist">
-        <h2 class="centerText">Artists</h2>
+        <header>
+            <h2>Artists</h2>
+        </header>
         <section class="centerBox">
             <section id="small_Artist_List">
-                <div class="row1"><img src="images/artists/agnes_hartwich_1x1.webp" alt="agnes_hartwich"></div>
+                <div class="row1">
+                    <img src="images/artists/agnes_hartwich_1x1.webp" alt="agnes_hartwich">
+                </div>
                 <div class="row2">
                     <img src="images/artists/evil_house_party_1x1.webp" alt="evil_house_party">
                     <img src="images/artists/dillistone_1x1.webp" alt="dillistone">
                 </div>
-                <div class="row1"><img src="images/artists/ude_af_kontrol_1x1.webp" alt="ude_af_kontrol"></div>
+                <div class="row1">
+                    <img src="images/artists/ude_af_kontrol_1x1.webp" alt="ude_af_kontrol">
+                </div>
                 <div class="row2">
                     <img src="images/artists/chopper_1x1.webp" alt="chopper">
                     <img src="images/artists/elektrisk_ål_1x1.webp" alt="elektrisk_ål">
                 </div>
-                <div class="row1"><img src="images/artists/astrid_engberg_1x1.webp" alt="astrid_engberg"></div>
+                <div class="row1">
+                    <img src="images/artists/astrid_engberg_1x1.webp" alt="astrid_engberg">
+                </div>
             </section>
         </section>
         <a href="artister.html">SE FLERE ARTISTER</a>
     </section>
-    <section>
-        <h2 class="centerText">Talks</h2>
+    <section id="talks">
+        <header>
+            <h2>Talks</h2>
+        </header>
         <p>* LIST of Talks</p>
         <ul>
             <div id="talk_row">
@@ -76,7 +86,7 @@
             </div>
         </ul>
     </section>
-    <section>
+    <section id="counter">
         <h2 class="centerText">Festivaliteterne begynder om</h2>
         <p>* COUNTER</p>
     </section>
@@ -96,16 +106,16 @@
                 </ul>
             </div>
             <div class="pricecol">
-                    <h3 class="date">Partout</h3>
-                    <p>Studerende og under 25 år</p>
-                    <h3 class="price">100,00 kr.</h3>
-                    <p>Voksne</p>
-                    <h3 class="price">150,00 kr.</h3>
-                    <p>Giver adgang til :</p>
-                    <ul>
-                        <li>Alle koncerter fredag samt <em>Ude af kontrol på godset</em></li>
-                        <li>Alle chillspots og talks alle dage</li>
-                    </ul>
+                <h3 class="date">Partout</h3>
+                <p>Studerende og under 25 år</p>
+                <h3 class="price">100,00 kr.</h3>
+                <p>Voksne</p>
+                <h3 class="price">150,00 kr.</h3>
+                <p>Giver adgang til :</p>
+                <ul>
+                    <li>Alle koncerter fredag samt <em>Ude af kontrol på godset</em></li>
+                    <li>Alle chillspots og talks alle dage</li>
+                </ul>
             </div>
             <div class="pricecol">
                 <h3 class="date">Lørdag</h3>
@@ -126,53 +136,51 @@
         <h2>BÆREDYGTIGHED</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
-    <footer>
-        <section id="footerGrid">
-            <div>
-                <h3>Links:</h3>
-                <ul>
-                    <li><a href="om-kold-festival">Om KOLD Festival</a></li>
-                    <li><a href="artister.html">Artister</a></li>
-                    <li><a href="baerdygtighed.html">Bærdygtighed</a></li>
-                    <li><a href="program-23.html">Program</a></li>
-                </ul>
-                <a class="billetKnap" href="https://tix.dk/da/musikkolding/buyingflow/tickets/15815/23040">Billetter</a>
-            </div>
-            <div>
-                <h3>Partnere:</h3>
-                <ul>
-                    <li><a href="#">IBA Erhvervsakademi Kolding</a></li>
-                    <li><a href="#">Godset</a></li>
-                    <li><a href="#">Pitstop</a></li>
-                    <li><a href="#">Knud Dancehall</a></li>
-                    <li><a href="#">Kolding bibliotek</a></li>
-                    <li><a href="#">27B</a></li>
-                    <li><a href="#">Bærdygtighedshuset i Kolding</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Site:</h3>
-                <ul>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">gpdr</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                </ul>
-            </div>
-            <div>
-                <a id="footerlogo" href="/"><img src="images/assets/snowflake.svg" alt=""></a>
-                <address>
-                    Jens Holms vej 5<br>
-                    6000 Kolding <br>
-                    <a href="tel:+4520225630">+45 20 22 86 30</a><br>
-                    <a href="mailto:sabuh@kolding.dk">sabuh@kolding.dk</a>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </address>
-            </div>
-        </section>
+    <footer id="footerGrid">
+        <div>
+            <h3>Links:</h3>
+            <ul>
+                <li><a href="om-kold-festival">Om KOLD Festival</a></li>
+                <li><a href="artister.html">Artister</a></li>
+                <li><a href="baerdygtighed.html">Bærdygtighed</a></li>
+                <li><a href="program-23.html">Program</a></li>
+            </ul>
+            <a class="billetKnap" href="https://tix.dk/da/musikkolding/buyingflow/tickets/15815/23040">Billetter</a>
+        </div>
+        <div>
+            <h3>Partnere:</h3>
+            <ul>
+                <li><a href="#">IBA Erhvervsakademi Kolding</a></li>
+                <li><a href="#">Godset</a></li>
+                <li><a href="#">Pitstop</a></li>
+                <li><a href="#">Knud Dancehall</a></li>
+                <li><a href="#">Kolding bibliotek</a></li>
+                <li><a href="#">27B</a></li>
+                <li><a href="#">Bærdygtighedshuset i Kolding</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Site:</h3>
+            <ul>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">gpdr</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div>
+            <a id="footerlogo" href="/"><img src="images/assets/snowflake.svg" alt=""></a>
+            <address>
+                Jens Holms vej 5<br>
+                6000 Kolding <br>
+                <a href="tel:+4520225630">+45 20 22 86 30</a><br>
+                <a href="mailto:sabuh@kolding.dk">sabuh@kolding.dk</a>
+            </address>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
         <h6>KOLD Festival © 2022</h6>
     </footer>
 </body>

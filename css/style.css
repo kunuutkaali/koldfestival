@@ -32,6 +32,8 @@ html, body{
 }
 body{
     padding-top:80px;
+    background:var(--main-bg-color);
+    color:var(--light-color);
 }
 a{
     font-family:'HelveticaNeue';
@@ -72,6 +74,7 @@ a{
 /* Knapper - links */
 
 .billetKnap{
+    display:inline-block;
     text-decoration: none;
     background:var(--color-1);
     color:var(--main-bg-color);
@@ -82,13 +85,17 @@ a{
 
 /* End og knapper - links */
 
-
+/* headers */
 header{
     text-align: center;
 }
+/* End Of headers */
+
+/* Sections */
+/* Artists */
 #artist{
-    height: 677px;
 }
+
 #small_Artist_List{
     display: grid;
     width: 1180px;
@@ -106,23 +113,26 @@ header{
 #small_Artist_List>.row2>img{
     width: 213px;
 }
+/* talks */
 #talk_row{
     display: grid;
     grid-template-columns: 20% 20%;
 }
-footer h6{
-    margin-bottom:0;
-}
-body{
-    background:var(--main-bg-color);
-    color:var(--light-color);
-}
-button>a{
-    color:var(--darker-bg-color) ;
-}
+/* Billetter */
 #billeter {
     background:var(--darker-bg-color);
 }
+.pricecol{
+}
+#days{
+    display: grid;
+    grid-template-columns: 398px 398px 398px;
+    justify-content: center;
+}
+/* End of Sections */
+
+
+
 .centerText{
     text-align: center;
 }
@@ -130,30 +140,25 @@ button>a{
     display: flex;
     justify-content: center;
 }
-#days{
-    display: grid;
-    grid-template-columns: 398px 398px 398px;
-    justify-content: center;
-}
-.pricecol{
-    display: grid;
-    height: 326px;
-    text-align: center;
-    grid-template-rows: 30% 30% 30% 30% 30%;
-}
-#billeter>button{
-    width: 125px;
-    height: 50px;
-    border-radius: 5px;
-    background:var(--color-1) ;
-}
 article{
     text-align: center;
 }
+
+
+
+
+/* FOOTER */
 footer{
     background:var(--footerBG) ;
+}
+footer ul{
+    list-style-type: none;
 }
 #footerGrid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+footer h6{
+    margin-bottom:0;
+}
+    /* END of Footer */

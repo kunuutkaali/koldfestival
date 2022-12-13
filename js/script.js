@@ -41,3 +41,10 @@ const createSnowEffect = () =>{
 }
 // Run function create and Animate SnowEffect
 createSnowEffect();
+
+// Display menu on click
+const mainNav = document.getElementById('mainNav');
+const topHeader = document.getElementById('topHeader');
+showMenuBtn.addEventListener('click', () =>{
+    topHeader.classList.toggle('showMenu');
+})

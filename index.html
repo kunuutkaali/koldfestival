@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav id="topHeader">
+    <nav id="topHeader" class="showMenu">
         <a href="/">
             <img id="headerLogo" src="images/assets/snowflake.svg" alt="">
         </a>
@@ -28,6 +28,13 @@
             <li><a href="om-kold-festival.html">Om Kold</a></li>
         </ul>
         <a class="btn" href="https://tix.dk/da/musikkolding/buyingflow/tickets/15815/23040">Billetter</a>
+        <button id="showMenuBtn">
+            <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="2" rx="1" fill="#D9D9D9"/>
+                <rect y="6" width="28" height="2" rx="1" fill="#D9D9D9"/>
+                <rect y="12" width="28" height="2" rx="1" fill="#D9D9D9"/>
+            </svg>
+        </button>
     </nav>
     <main id="frontpageHeader">
         <header>
@@ -202,10 +209,12 @@
             <div>
                 <a id="footerlogo" href="/"><img src="images/assets/snowflake.svg" alt=""></a>
                 <address>
-                    Jens Holms vej 5<br>
-                    6000 Kolding <br>
-                    <a href="tel:+4520225630">+45 20 22 86 30</a><br>
-                    <a href="mailto:sabuh@kolding.dk">sabuh@kolding.dk</a>
+                    <ul>
+                        <li>Jens Holms vej 5</li>
+                        <li>6000 Kolding</li>
+                        <li><a href="tel:+4520225630">+45 20 22 86 30</a></li>
+                        <li><a href="mailto:sabuh@kolding.dk">sabuh@kolding.dk</a></li>
+                    </ul>
                 </address>
                 <ul>
                     <li><a href="#">Facebook</a></li>
@@ -214,7 +223,7 @@
                 </ul>
             </div>
         </div>
-        <h6>KOLD Festival © 2022</h6>
+        <h6>KOLD Festival © <script>document.write(new Date().getFullYear())</script></h6>
     </footer>
 </body>
 </html>

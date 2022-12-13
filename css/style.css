@@ -68,7 +68,6 @@ a{
     text-transform: uppercase;
     font-family: 'HelveticaNeue', sans-serif;
     margin-right:10px;
-    transition: 300ms;
 }
 #mainNav > li > a:hover{
     border-bottom:var(--color-1) solid 2px;
@@ -79,6 +78,14 @@ a{
 #headerLogo{
     max-height:33px;
     width:auto;
+}
+
+#showMenuBtn{
+    background:var(--darker-bg-color);
+    border:var(--color-1) 1px solid;
+    padding:16px;
+    display:none;
+    border-radius:5px;
 }
 
 /* End of navigation */
@@ -305,4 +312,69 @@ footer ul > li{
 footer h6{
     margin:0;
 }
-    /* END of Footer */
+/* END of Footer */
+
+
+/* MOBILE LAYOUT */
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --section-padding-top: 50px;
+        --section-padding-bottom: 50px;
+        --section-padding-left: 20px;
+        --section-padding-right: 20px;
+    }
+
+    /* Main menu */
+    #topHeader{
+        padding:0 5px 0 5px;
+        justify-content: space-between;
+    }
+    #mainNav{
+        display:none;
+    }
+    #showMenuBtn{
+        display:inline-block
+    }
+    #topHeader .btn{
+        margin-left:0;
+        padding:10px;
+    }
+    #topHeader.showMenu{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #topHeader.showMenu #mainNav{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    /* SECTIONS */
+    .talksGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    #days{
+        grid-template-columns: 1fr;
+        row-gap:25px;
+    }
+    #footerGrid{
+        grid-template-columns: 1fr;
+        row-gap:30px;
+        text-align: center;
+    }
+    footer{
+        padding:30px 20px 30px 20px;
+    }
+    #footerGrid ul a,
+    #footerGrid address a{
+        padding:10px;
+    }
+    #footerGrid > div:last-child{
+        text-align: center;
+    }
+
+}
+
+/* END OF MOBILE LAYOUT*/

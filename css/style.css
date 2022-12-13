@@ -21,8 +21,8 @@
     --talksbox: #D9D9D9;
     --light-color:#E3E3E3;
 }
-*{
-    box-sizing: border-box;}
+/* basic Reset */
+*{box-sizing: border-box;}
 html, body{
     /* basic reset of html and body */
     margin:0;
@@ -30,7 +30,9 @@ html, body{
     box-sizing: border-box;
     font-family: 'HelveticaNeue';
 }
-
+body{
+    padding-top:80px;
+}
 a{
     font-family:'HelveticaNeue';
     color: var(--light-color);

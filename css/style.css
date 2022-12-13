@@ -68,6 +68,7 @@ a{
     text-transform: uppercase;
     font-family: 'HelveticaNeue', sans-serif;
     margin-right:10px;
+    transition: 300ms;
 }
 #mainNav > li > a:hover{
     border-bottom:var(--color-1) solid 2px;
@@ -115,7 +116,7 @@ header{
     justify-content: center;
     padding:80px var(--section-padding-right) 0 var(--section-padding-left);
     min-height:90vh;
-    background: url("../images/header.png") no-repeat top;
+    background: url("../images/header.webp") no-repeat top;
     background-size: cover;
 }
 /* End Of headers */
@@ -156,10 +157,6 @@ body > section{
     display:flex;
     flex-direction: column;
     row-gap: 3vh;
-}
-.centerBox{
-    display: flex;
-    justify-content: center;
 }
 
 

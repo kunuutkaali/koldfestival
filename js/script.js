@@ -49,6 +49,7 @@ showMenuBtn.addEventListener('click', () =>{
     topHeader.classList.toggle('showMenu');
 })
 
+
 // countdown
 import countdown from "./countdown.js";
 // date counting down to the festival start

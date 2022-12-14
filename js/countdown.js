@@ -13,6 +13,7 @@ export default class CountDown {
     calculateDiffence(){
         this.difference = this.countDownDate - new Date().getTime();
         if(this.difference < 0){
+            clearInterval(this.timer);
             this.days.parentNode.parentNode.parentNode.innerHTML = "<h2 class='centerText'>KOLD Festival er igang!</h2>"
         }else{
             this.update();
@@ -26,6 +27,6 @@ export default class CountDown {
     }
     startTimer(){
         let t = this;
-        setInterval(function(){t.calculateDiffence();}, t.interval);
+        this.timer = setInterval(function(){t.calculateDiffence();}, t.interval);
     }
 }

@@ -48,3 +48,14 @@ const topHeader = document.getElementById('topHeader');
 showMenuBtn.addEventListener('click', () =>{
     topHeader.classList.toggle('showMenu');
 })
+
+// countdown
+import countdown from "./countdown.js";
+// date counting down to the festival start
+const CountDown = new countdown(
+    "Feb 3, 2023 16:00:00", 
+    document.getElementById('countDays'), 
+    document.getElementById('countHours'), 
+    document.getElementById('countMinutes'), 
+    document.getElementById('countSeconds')
+    );

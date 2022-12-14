@@ -1,27 +1,31 @@
-// have used https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown 12/12/2022
 
-// date counting down to the festival start
-const countDownDate = new Date ("Feb 3, 2023 16:00:00").getTime();
-
-// countdown time
-var contdownTime = countDownDate - now
-
-// todays day
-var now = new Date().getTime();
-
-// how the does time work
-const Dage = Timer 24;
-const Timer = Minutter * 60;
-const Minutter = Sekunder * 60;
-const Sekunder=  1000;
-
-//Calculate countdown
-const Dage = Math.floor(contdownTime/ dage);
-const Timer = Math.floor(contdownTime %/ Timer);
-const Minutter = Math.floor(contdownTime % /Minutter);
-const Sekunder = Math.floor(contdownTime % /Sekunder);
-
-
-//
-
-
+export default class CountDown {
+    constructor(countDownDate, days, hours, minutes, seconds ){
+        this.countDownDate = new Date(countDownDate).getTime();
+        this.days = days;
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+        this.interval = 1000;
+        this.difference = this.countDownDate - new Date().getTime();
+        this.startTimer();
+    }
+    calculateDiffence(){
+        this.difference = this.countDownDate - new Date().getTime();
+        if(this.difference < 0){
+            this.days.parentNode.parentNode.parentNode.innerHTML = "<h2 class='centerText'>KOLD Festival er igang!</h2>"
+        }else{
+            this.update();
+        }
+    }
+    update(){
+        this.days.innerHTML = Math.floor(this.difference / (1000 * 60 * 60 * 24));
+        this.hours.innerText = Math.floor((this.difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        this.minutes.innerText = Math.floor((this.difference % (1000 * 60 * 60)) / (1000 * 60));
+        this.seconds.innerText = Math.floor((this.difference % (1000 * 60)) / (1000));
+    }
+    startTimer(){
+        let t = this;
+        setInterval(function(){t.calculateDiffence();}, t.interval);
+    }
+}

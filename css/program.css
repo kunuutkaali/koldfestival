@@ -1,10 +1,13 @@
+section#program{
+    padding:150px 30px;
+}
 .venues{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
 }
 .venue{
-
+    padding:10px;
 }
 .venue h3{
     margin:0;
@@ -18,7 +21,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .venues{
         display:grid;
         grid-template-columns: 1fr;

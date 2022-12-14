@@ -1,0 +1,26 @@
+.venues{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.venue{
+
+}
+.venue h3{
+    margin:0;
+}
+.venue p{
+    margin:0;
+}
+.venue .artist{
+    font-family: 'HelveticaNeueBold';
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .venues{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}

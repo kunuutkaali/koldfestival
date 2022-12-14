@@ -2,12 +2,24 @@
 import Snoweffect from "./snoweffect.js";
 import countdown from "./countdown.js";
 
+
+//get artists info:
+const checkIfArtistSelected = () =>{
+    if(window.location.search){
+        let artistId = window.location.search.replace('?artistid=','');
+    }else{
+
+    }
+}
+// Display all artists
+const displayArtists = (artists) =>{
+    // Diplay all artists on artist page:
+}
+
 // Window location:
 switch (window.location.pathname){
     case "/":
-        
         // Codes to use in frontpage side:
-
 
         // countdown
         // Define days etc to date.
@@ -17,10 +29,12 @@ switch (window.location.pathname){
         const seconds = document.getElementById('countSeconds');
         // Initialize count down
         const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
+
         break;
     case "/artister.html":
-        let artistId = window.location.search.replace('?artistid=','');
-        console.log(artistId);
+        fetch('content/artists.json')
+            .then((response) => response.json())
+            .then((data) => displayArtists(data['artists']))
         break;
     default:
         break;

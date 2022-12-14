@@ -273,7 +273,7 @@ a{
 }
 .btn{
     font-family: 'HelveticaNeueBold', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 /* FOOTER Typography */

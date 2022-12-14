@@ -1,6 +1,32 @@
 // Import external scripts
 import Snoweffect from "./snoweffect.js";
 import countdown from "./countdown.js";
+
+// Window location:
+switch (window.location.pathname){
+    case "/":
+        
+        // Codes to use in frontpage side:
+
+
+        // countdown
+        // date counting down to the festival start
+        // Define days hours etc.
+        const days = document.getElementById('countDays');
+        const hours = document.getElementById('countHours');
+        const minutes = document.getElementById('countMinutes');
+        const seconds = document.getElementById('countSeconds');
+        // Initialize count down
+        const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
+        break;
+    case "artister.html":
+        // Codes to use in artist side:
+        break;
+    default:
+        break;
+}
+
+// Snoweffect function
 const createSnowEffect = () =>{
     // Create image element
     const flakeImage = new Image();
@@ -48,29 +74,3 @@ const topHeader = document.getElementById('topHeader');
 showMenuBtn.addEventListener('click', () =>{
     topHeader.classList.toggle('showMenu');
 })
-
-// Window location:
-switch (window.location.pathname){
-    case "/":
-        
-        // Codes to use in frontpage side:
-
-
-        // countdown
-        // date counting down to the festival start
-        // Define days hours etc.
-        const days = document.getElementById('countDays');
-        const hours = document.getElementById('countHours');
-        const minutes = document.getElementById('countMinutes');
-        const seconds = document.getElementById('countSeconds');
-        // Initialize count down
-        const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
-
-
-        break;
-    case "artister.html":
-        // Codes to use in artist side:
-        break;
-    default:
-        break;
-}

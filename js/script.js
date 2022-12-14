@@ -11,16 +11,72 @@ const checkIfArtistSelected = () =>{
 
     }
 }
+
+
+let modal = document.createElement('div');
+modal.style.position = "absolute";
+console.log(modal);
+
+// create overlay and modal with selected artist
+const displaySelectedArtist = (artist) =>{
+
+    // Overlay
+    let overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.prepend(overlay);
+
+    // Modal div
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+    overlay.append(modal);
+
+    // Close artist info button
+    let closeBtn = document.createElement('button');
+    closeBtn.innerText = "X";
+    modal.append(closeBtn);
+    closeBtn.addEventListener('click', (e) => {
+        e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+    })
+    
+     // Artist name
+     let artistName = document.createElement('h2');
+     artistName.innerText = artist.name;
+     modal.append(artistName);
+
+     // Spotify iframe
+    const iframe = document.createElement('iframe');
+    let src = "https://open.spotify.com/embed/artist/" + artist.spotifyId;
+    iframe.style = "border-radius:12px; border:0";
+    iframe.src = src;
+    iframe.width="450";
+    iframe.height="380";
+    iframe.allowfullscreen="";
+    iframe.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    iframe.loading="lazy";
+    modal.append(iframe);
+}
 // Display all artists
 const displayArtists = (artists) =>{
     // Diplay all artists on artist page:
+    const artister = document.getElementById('artister');
+    let count = 0;
+    for(let index in artists){
+        let artist = artists[index];
+        let artistLink = document.createElement('a');
+        let artistImage = document.createElement('img')
+        artistImage.src = artist.image;
+        artistImage.alt = artist.name;
+        artistLink.addEventListener('click', () =>{
+            displaySelectedArtist(artist);
+        })
+        artistLink.appendChild(artistImage);
+        artister.append(artistLink);
+    }
 }
 
 // Window location:
 switch (window.location.pathname){
     case "/":
-        // Codes to use in frontpage side:
-
         // countdown
         // Define days etc to date.
         const days = document.getElementById('countDays');
@@ -29,7 +85,6 @@ switch (window.location.pathname){
         const seconds = document.getElementById('countSeconds');
         // Initialize count down
         const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
-
         break;
     case "/artister.html":
         fetch('content/artists.json')

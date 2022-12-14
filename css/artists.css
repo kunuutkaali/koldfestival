@@ -20,9 +20,11 @@
 }
 #artistList>.row4>img{
     width: 213px;
+    cursor: pointer;
 }
 #artistList>.row5>img{
     width: 213px;
+    cursor: pointer;
 }
 #artistList>.row4{
     flex-direction: column;

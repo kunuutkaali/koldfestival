@@ -15,7 +15,6 @@ const checkIfArtistSelected = () =>{
 
 let modal = document.createElement('div');
 modal.style.position = "absolute";
-console.log(modal);
 
 // create overlay and modal with selected artist
 const displaySelectedArtist = (artist) =>{

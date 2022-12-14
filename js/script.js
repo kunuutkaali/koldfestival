@@ -53,10 +53,10 @@ showMenuBtn.addEventListener('click', () =>{
 // countdown
 import countdown from "./countdown.js";
 // date counting down to the festival start
-const CountDown = new countdown(
-    "Feb 3, 2023 16:00:00", 
-    document.getElementById('countDays'), 
-    document.getElementById('countHours'), 
-    document.getElementById('countMinutes'), 
-    document.getElementById('countSeconds')
-    );
+// Define days hours etc.
+const days = document.getElementById('countDays');
+const hours = document.getElementById('countHours');
+const minutes = document.getElementById('countMinutes');
+const seconds = document.getElementById('countSeconds');
+// Initialize count down
+const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);

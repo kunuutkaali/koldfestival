@@ -25,35 +25,58 @@
         {
             "name":"Cumbian Colors",
             "spotifyId":"4MLdFWfIzk10DTDnTti05e",
-            "image":"cumbian_colors_1x1.webp"
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Danser Med Piger",
-            "spotifyId":"0OhwwB6b7ugDTS41UT4YJS"
+            "spotifyId":"0OhwwB6b7ugDTS41UT4YJS",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Djämes Braun",
-            "spotifyId":"3kI2qtr3zCuB4YbDl5yvkh"
+            "spotifyId":"3kI2qtr3zCuB4YbDl5yvkh",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Elektrisk Ål",
-            "spotifyId":"73UbTOKS7e146PBWxFQrff"
+            "spotifyId":"73UbTOKS7e146PBWxFQrff",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Evil House Party",
-            "spotifyId":"4dcXQW2aINb1lAMHKQa2hB"
+            "spotifyId":"4dcXQW2aINb1lAMHKQa2hB",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Ipek Yulo",
-            "spotifyId":"5TIy4svVCpewV2guElzwB7"
+            "spotifyId":"5TIy4svVCpewV2guElzwB7",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Kamma",
-            "spotifyId":"5pUS7wijCmJYhSLasDlLLj"
+            "spotifyId":"5pUS7wijCmJYhSLasDlLLj",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"SULKA",
-            "spotifyId":"467BSFPrqZP3HT6dXzsBqv"
+            "spotifyId":"467BSFPrqZP3HT6dXzsBqv",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"SUNI",
@@ -61,19 +84,31 @@
         },
         {
             "name":"Szim",
-            "spotifyId":"41x4mjrHp3B0fLf7rFktcT"
+            "spotifyId":"41x4mjrHp3B0fLf7rFktcT",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Tettix Hexer",
-            "spotifyId":"3CPIQ7xQ4flFItDS8f7wqa"
+            "spotifyId":"3CPIQ7xQ4flFItDS8f7wqa",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"The Physics House Band",
-            "spotifyId":"30EilmonVXftR1pWoALezP"
+            "spotifyId":"30EilmonVXftR1pWoALezP",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         },
         {
             "name":"Ude Af Kontrol",
-            "spotifyId":"2ZbyyCS8KLKsuoNlxc76Ev"
+            "spotifyId":"2ZbyyCS8KLKsuoNlxc76Ev",
+            "image":"cumbian_colors_1x1.webp",
+            "veneue":"Jazzhouse",
+            "start":"16:30"
         }
     ]
 }

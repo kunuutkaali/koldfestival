@@ -56,6 +56,7 @@ a{
     display: flex;
     align-items: center;
     padding:0 50px 0 50px;
+    z-index: 3;
 }
 #mainNav{
     display:flex;
@@ -161,6 +162,7 @@ body > section{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2%;
     place-items: center;
+    z-index: 2;
 }
 #small_Artist_List img{
     object-fit: contain;
@@ -172,6 +174,11 @@ body > section{
     flex-direction: column;
     row-gap: 3vh;
 }
+
+#small_Artist_List a:hover {
+    transform: scale(1.15);
+}
+
 
 
 /* Sections |  talks */
@@ -384,6 +391,218 @@ footer h6{
 }
 /* END of Footer */
 
+/* COLORED SHAPES */
+#coloredShape1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2EFEB3;
+    position: absolute;
+    left: 0;
+    top: 700px;
+    z-index: 1;
+}
+
+
+
+#coloredShape2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1000px;
+}
+
+
+
+#coloredShape3a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 1100px;
+    transform: scaleY(-1);
+}
+
+#coloredShape3b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1100px;
+}
+
+
+
+#coloredShape4a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 1200px;
+    transform: scaleX(-1);
+}
+
+#coloredShape4b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 1200px;
+}
+
+#coloredShape4c {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 1200px;
+}
+
+
+#coloredShape5a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #2EFEB3 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+    top: 1800px;
+    transform: scaleY(-1);
+}
+
+#coloredShape5b {
+    width: 100px;
+    height: 100px;
+    background-color: #2EFEB3;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 1800px;
+}
+
+#coloredShape5c {
+    width: 100px;
+    height: 100px;
+    background-color: #2EFEB3;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1800px;
+}
+
+#coloredShape6a {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 2000px;
+}
+
+#coloredShape6b {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 2000px;
+    transform: rotate(180deg);
+}
+
+#coloredShape7a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 2500px;
+}
+
+#coloredShape7b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 2500px;
+}
+
+#coloredShape8 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #2EFEB3 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 2600px;
+    transform: rotate(90deg);
+}
+
+#coloredShape9a {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 2700px;
+}
+
+#coloredShape9b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 2700px;
+}
+
+#coloredShape9c {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 2700px;
+    transform: rotate(90deg);
+}
+
 
 /* MOBILE LAYOUT */
 
@@ -533,6 +752,123 @@ footer h6{
         text-align: center;
     }
 
+
+    /* COLORED SHAPES */
+    #coloredShape1 {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid #2EFEB3;
+        left: 0;
+        top: 825px;
+    }
+
+    #coloredShape2 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 0;
+        top: 1125px;
+    }
+
+    #coloredShape3a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        right: 50px;
+        top: 1175px;
+    }
+
+    #coloredShape3b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 1175px;
+    }
+
+    #coloredShape4a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        left: 50px;
+        top: 1350px;
+    }
+
+    #coloredShape4b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 1350px;
+    }
+
+    #coloredShape4c {
+        display: none;
+    }
+
+    #coloredShape5a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #2EFEB3 transparent;
+        right: 0;
+        top: 1800px;
+    }
+
+    #coloredShape5b {
+        display: none;
+    }
+
+    #coloredShape5c {
+        display: none;
+    }
+
+    #coloredShape6a {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 2200px;
+    }
+
+    #coloredShape6b {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        left: 50px;
+        top: 2200px;
+    }
+
+    #coloredShape7a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 50px;
+        top: 2450px;
+    }
+
+    #coloredShape7b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 2450px;
+    }
+
+    #coloredShape8 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #2EFEB3 transparent;
+        left: 0;
+        top: 3400px;
+    }
+
+    #coloredShape9a {
+        display: none;
+    }
+
+    #coloredShape9b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 3450px;
+    }
+
+    #coloredShape9c {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        left: 50px;
+        top: 3450px;
+        transform: rotate(180deg);
+    }
 }
 
 /* END OF MOBILE LAYOUT*/

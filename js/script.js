@@ -10,8 +10,7 @@ switch (window.location.pathname){
 
 
         // countdown
-        // date counting down to the festival start
-        // Define days hours etc.
+        // Define days etc to date.
         const days = document.getElementById('countDays');
         const hours = document.getElementById('countHours');
         const minutes = document.getElementById('countMinutes');
@@ -19,8 +18,9 @@ switch (window.location.pathname){
         // Initialize count down
         const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
         break;
-    case "artister.html":
-        // Codes to use in artist side:
+    case "/artister.html":
+        let artistId = window.location.search.replace('?artistid=','');
+        console.log(artistId);
         break;
     default:
         break;

@@ -1,21 +1,20 @@
 // Import external scripts
 import Snoweffect from "./snoweffect.js";
+import countdown from "./countdown.js";
 const createSnowEffect = () =>{
     // Create image element
     const flakeImage = new Image();
-
     // Set the source for image
     flakeImage.src = "../images/assets/snowflake.svg";
-    
-    // Create canvas element and set attributes: id, width, height. Then prepend to body
-    const bgCanvas = document.createElement('canvas');
-    bgCanvas.id = 'snoweffect-bg';
-    bgCanvas.width = document.body.scrollWidth;
-    bgCanvas.height = window.innerHeight;
-    bgCanvas.style = 'position:fixed; z-index:-5;';
 
     // Once image is loaded, create canvas, get 2d context from canvas and create snow effect instance and run the animation
     flakeImage.onload = () =>{
+        // Create canvas element and set attributes: id, width, height. Then prepend to body
+        const bgCanvas = document.createElement('canvas');
+        bgCanvas.id = 'snoweffect-bg';
+        bgCanvas.width = document.body.scrollWidth;
+        bgCanvas.height = window.innerHeight;
+        bgCanvas.style = 'position:fixed; z-index:-5;';
         document.body.prepend(bgCanvas);
 
         // Get the context from bgCanvas
@@ -28,9 +27,10 @@ const createSnowEffect = () =>{
 
         // Initialize snoweffect, sets the amount of flakes and create snowflake objects
         snowEffect.init();
-        snowEffect.animate();
 
         // Run the actual animation
+        snowEffect.animate();
+        // Resize canvas when window is resized
         window.addEventListener('resize', ()=>{
             bgCanvas.width = document.body.scrollWidth;
             bgCanvas.height = window.innerHeight;
@@ -49,14 +49,28 @@ showMenuBtn.addEventListener('click', () =>{
     topHeader.classList.toggle('showMenu');
 })
 
+// Window location:
+switch (window.location.pathname){
+    case "/":
+        
+        // Codes to use in frontpage side:
 
-// countdown
-import countdown from "./countdown.js";
-// date counting down to the festival start
-// Define days hours etc.
-const days = document.getElementById('countDays');
-const hours = document.getElementById('countHours');
-const minutes = document.getElementById('countMinutes');
-const seconds = document.getElementById('countSeconds');
-// Initialize count down
-const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
+
+        // countdown
+        // date counting down to the festival start
+        // Define days hours etc.
+        const days = document.getElementById('countDays');
+        const hours = document.getElementById('countHours');
+        const minutes = document.getElementById('countMinutes');
+        const seconds = document.getElementById('countSeconds');
+        // Initialize count down
+        const CountDown = new countdown("Feb 3, 2023 16:00:00", days,  hours, minutes, seconds);
+
+
+        break;
+    case "artister.html":
+        // Codes to use in artist side:
+        break;
+    default:
+        break;
+}

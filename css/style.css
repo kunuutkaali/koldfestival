@@ -339,7 +339,7 @@ footer h6{
     }
     html, body{
         max-width: 600px;
-        overflow:hidden;
+        overflow-x:hidden;
     }
 
     /* Main menu */

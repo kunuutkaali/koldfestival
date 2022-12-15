@@ -801,6 +801,7 @@ footer h6{
 }
 
 #coloredShapeProgram4a {
+    display: none;
     width: 0;
     height: 0;
     border-style: solid;
@@ -814,6 +815,7 @@ footer h6{
 }
 
 #coloredShapeProgram4b {
+    display: none;
     width: 100px;
     height: 100px;
     background-color: #31C5F4;
@@ -824,6 +826,7 @@ footer h6{
 }
 
 #coloredShapeProgram4c {
+    display: none;
     width: 100px;
     height: 100px;
     background-color: #31C5F4;
@@ -1042,7 +1045,7 @@ footer h6{
     position: absolute;
     z-index: 1;
     left: 200px;
-    top: 620px;
+    top: 1050px;
     transform: scaleX(-1);
 }
 
@@ -1053,7 +1056,7 @@ footer h6{
     position: absolute;
     z-index: 1;
     left: 100px;
-    top: 620px;
+    top: 1050px;
 }
 
 #coloredShapeOmKOLD4c {
@@ -1063,7 +1066,7 @@ footer h6{
     position: absolute;
     z-index: 1;
     left: 0;
-    top: 620px;
+    top: 1050px;
 }
 
 
@@ -1440,17 +1443,19 @@ footer h6{
     }
 
     #coloredShapeProgram4a {
+        display: block;
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #31C5F4 transparent;
         left: 50px;
-        top: 2700px;
+        top: 2650px;
     }
 
     #coloredShapeProgram4b {
+        display: block;
         width: 50px;
         height: 50px;
         left: 0;
-        top: 2700px;
+        top: 2650px;
     }
 
     #coloredShapeProgram4c {
@@ -1567,14 +1572,14 @@ footer h6{
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #31C5F4 transparent;
         left: 50px;
-        top: 550px;
+        top: 1090px;
     }
 
     #coloredShapeOmKOLD4b {
         width: 50px;
         height: 50px;
         left: 0;
-        top: 550px;
+        top: 1090px;
     }
 
     #coloredShapeOmKOLD4c {

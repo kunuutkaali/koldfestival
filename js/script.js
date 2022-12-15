@@ -42,17 +42,21 @@ const displaySelectedArtist = (artist) =>{
      artistName.innerText = artist.name;
      modal.append(artistName);
 
-     // Spotify iframe
-    const iframe = document.createElement('iframe');
-    let src = "https://open.spotify.com/embed/artist/" + artist.spotifyId;
-    iframe.style = "border-radius:12px; border:0";
-    iframe.src = src;
-    iframe.width="450";
-    iframe.height="380";
-    iframe.allowfullscreen="";
-    iframe.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    iframe.loading="lazy";
-    modal.append(iframe);
+    // Spotify iframe
+    if(artist.spotifyId){
+        const iframe = document.createElement('iframe');
+        let src = "https://open.spotify.com/embed/artist/" + artist.spotifyId;
+        iframe.style = "border-radius:12px; border:0";
+        iframe.src = src;
+        iframe.width="450";
+        iframe.height="380";
+        iframe.allowfullscreen="";
+        iframe.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        iframe.loading="lazy";
+        modal.append(iframe);
+    }else{
+        console.log("No spotify id");
+    }
 }
 // Display all artists
 const displayArtists = (artists) =>{

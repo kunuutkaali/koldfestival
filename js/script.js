@@ -3,16 +3,6 @@ import Snoweffect from "./snoweffect.js";
 import countdown from "./countdown.js";
 
 
-//get artists info:
-const checkIfArtistSelected = () =>{
-    if(window.location.search){
-        let artistId = window.location.search.replace('?artistid=','');
-    }else{
-
-    }
-}
-
-
 let modal = document.createElement('div');
 modal.style.position = "absolute";
 
@@ -62,7 +52,6 @@ const displaySelectedArtist = (artist) =>{
 const displayArtists = (artists) =>{
     // Diplay all artists on artist page:
     const artister = document.getElementById('artister');
-    let count = 0;
     for(let index in artists){
         let artist = artists[index];
         let artistLink = document.createElement('a');

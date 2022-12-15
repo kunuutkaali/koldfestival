@@ -52,7 +52,6 @@ const displaySelectedArtist = (artist) =>{
 const displayArtists = (artists) =>{
     // Diplay all artists on artist page:
     const artister = document.getElementById('artister');
-    let count = 0;
     for(let index in artists){
         let artist = artists[index];
         let artistLink = document.createElement('a');

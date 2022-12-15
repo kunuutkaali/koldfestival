@@ -391,8 +391,8 @@ footer h6{
 }
 /* END of Footer */
 
-/* COLORED SHAPES */
-#coloredShape1 {
+/* COLORED SHAPES FRONTPAGE*/
+#coloredShapeFrontpage1 {
     width: 0;
     height: 0;
     border-top: 60px solid transparent;
@@ -406,7 +406,7 @@ footer h6{
 
 
 
-#coloredShape2 {
+#coloredShapeFrontpage2 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -420,7 +420,7 @@ footer h6{
 
 
 
-#coloredShape3a {
+#coloredShapeFrontpage3a {
     width: 0;
     height: 0;
     border-style: solid;
@@ -433,7 +433,7 @@ footer h6{
     transform: scaleY(-1);
 }
 
-#coloredShape3b {
+#coloredShapeFrontpage3b {
     width: 100px;
     height: 100px;
     background-color: #FD0079;
@@ -445,7 +445,7 @@ footer h6{
 
 
 
-#coloredShape4a {
+#coloredShapeFrontpage4a {
     width: 0;
     height: 0;
     border-style: solid;
@@ -458,7 +458,7 @@ footer h6{
     transform: scaleX(-1);
 }
 
-#coloredShape4b {
+#coloredShapeFrontpage4b {
     width: 100px;
     height: 100px;
     background-color: #31C5F4;
@@ -468,7 +468,7 @@ footer h6{
     top: 1200px;
 }
 
-#coloredShape4c {
+#coloredShapeFrontpage4c {
     width: 100px;
     height: 100px;
     background-color: #31C5F4;
@@ -479,7 +479,7 @@ footer h6{
 }
 
 
-#coloredShape5a {
+#coloredShapeFrontpage5a {
     width: 0;
     height: 0;
     border-style: solid;
@@ -492,7 +492,7 @@ footer h6{
     transform: scaleY(-1);
 }
 
-#coloredShape5b {
+#coloredShapeFrontpage5b {
     width: 100px;
     height: 100px;
     background-color: #2EFEB3;
@@ -502,7 +502,7 @@ footer h6{
     top: 1800px;
 }
 
-#coloredShape5c {
+#coloredShapeFrontpage5c {
     width: 100px;
     height: 100px;
     background-color: #2EFEB3;
@@ -512,7 +512,7 @@ footer h6{
     top: 1800px;
 }
 
-#coloredShape6a {
+#coloredShapeFrontpage6a {
     width: 100px;
     height: 100px;
     background-color: #FD0079;
@@ -522,7 +522,7 @@ footer h6{
     top: 2000px;
 }
 
-#coloredShape6b {
+#coloredShapeFrontpage6b {
     width: 0;
     height: 0;
     border-style: solid;
@@ -535,7 +535,7 @@ footer h6{
     transform: rotate(180deg);
 }
 
-#coloredShape7a {
+#coloredShapeFrontpage7a {
     width: 0;
     height: 0;
     border-style: solid;
@@ -547,7 +547,7 @@ footer h6{
     top: 2500px;
 }
 
-#coloredShape7b {
+#coloredShapeFrontpage7b {
     width: 100px;
     height: 100px;
     background-color: #31C5F4;
@@ -557,7 +557,7 @@ footer h6{
     top: 2500px;
 }
 
-#coloredShape8 {
+#coloredShapeFrontpage8 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -570,7 +570,7 @@ footer h6{
     transform: rotate(90deg);
 }
 
-#coloredShape9a {
+#coloredShapeFrontpage9a {
     width: 100px;
     height: 100px;
     background-color: #FD0079;
@@ -580,7 +580,7 @@ footer h6{
     top: 2700px;
 }
 
-#coloredShape9b {
+#coloredShapeFrontpage9b {
     width: 100px;
     height: 100px;
     background-color: #FD0079;
@@ -590,7 +590,7 @@ footer h6{
     top: 2700px;
 }
 
-#coloredShape9c {
+#coloredShapeFrontpage9c {
     width: 0;
     height: 0;
     border-style: solid;
@@ -602,6 +602,475 @@ footer h6{
     top: 2700px;
     transform: rotate(90deg);
 }
+
+
+
+/* COLORED SHAPES ARTISTS */
+#coloredShapeArtists1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2EFEB3;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+
+
+#coloredShapeArtists2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 350px;
+}
+
+
+
+#coloredShapeArtists3a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 450px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeArtists3b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 450px;
+}
+
+#coloredShapeArtists4a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 800px;
+    transform: scaleX(-1);
+}
+
+#coloredShapeArtists4b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 800px;
+}
+
+
+#coloredShapeArtists5a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #2EFEB3 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 1000px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeArtists5b {
+    width: 100px;
+    height: 100px;
+    background-color: #2EFEB3;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1000px;
+}
+
+#coloredShapeArtists8 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #2EFEB3 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 1450px;
+    transform: rotate(90deg);
+}
+
+#coloredShapeArtists9a {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 1550px;
+}
+
+#coloredShapeArtists9b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 1550px;
+}
+
+#coloredShapeArtists9c {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 1550px;
+    transform: rotate(90deg);
+}
+
+
+
+/* COLORED SHAPES PROGRAM*/
+#coloredShapeProgram1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2EFEB3;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+#coloredShapeProgram2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 480px;
+}
+
+#coloredShapeProgram3a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 580px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeProgram3b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 580px;
+}
+
+#coloredShapeProgram4a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 980px;
+    transform: scaleX(-1);
+}
+
+#coloredShapeProgram4b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 980px;
+}
+
+#coloredShapeProgram4c {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 980px;
+}
+
+
+/* COLORED SHAPES BAEREDYGTIGHED */
+#coloredShapeBaeredygtighed1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2EFEB3;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+
+
+#coloredShapeBaeredygtighed2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 300px;
+}
+
+
+
+#coloredShapeBaeredygtighed3a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 400px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeBaeredygtighed3b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 400px;
+}
+
+#coloredShapeBaeredygtighed4a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 600px;
+    transform: scaleX(-1);
+}
+
+#coloredShapeBaeredygtighed4b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 600px;
+}
+
+#coloredShapeBaeredygtighed4c {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 600px;
+}
+
+
+#coloredShapeBaeredygtighed5a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #2EFEB3 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 1000px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeBaeredygtighed5b {
+    width: 100px;
+    height: 100px;
+    background-color: #2EFEB3;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1000px;
+}
+
+#coloredShapeBaeredygtighed6b {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 1300px;
+    transform: rotate(180deg);
+}
+
+#coloredShapeBaeredygtighed7a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 1700px;
+}
+
+#coloredShapeBaeredygtighed7b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1700px;
+}
+
+
+/* COLORED SHAPES OM KOLD */
+#coloredShapeOmKOLD1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2EFEB3;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+
+
+#coloredShapeOmKOLD2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 300px;
+}
+
+
+
+#coloredShapeOmKOLD3a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #FD0079 transparent;
+    position: absolute;
+    z-index: 1;
+    right: 100px;
+    top: 400px;
+    transform: scaleY(-1);
+}
+
+#coloredShapeOmKOLD3b {
+    width: 100px;
+    height: 100px;
+    background-color: #FD0079;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 400px;
+}
+
+
+
+#coloredShapeOmKOLD4a {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #31C5F4 transparent;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 620px;
+    transform: scaleX(-1);
+}
+
+#coloredShapeOmKOLD4b {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 620px;
+}
+
+#coloredShapeOmKOLD4c {
+    width: 100px;
+    height: 100px;
+    background-color: #31C5F4;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 620px;
+}
+
+
+
+
+
+
 
 
 /* MOBILE LAYOUT */
@@ -753,8 +1222,8 @@ footer h6{
     }
 
 
-    /* COLORED SHAPES */
-    #coloredShape1 {
+    /* COLORED SHAPES FRONTPAGE*/
+    #coloredShapeFrontpage1 {
         border-top: 30px solid transparent;
         border-bottom: 30px solid transparent;
         border-left: 30px solid #2EFEB3;
@@ -762,112 +1231,354 @@ footer h6{
         top: 825px;
     }
 
-    #coloredShape2 {
+    #coloredShapeFrontpage2 {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #31C5F4 transparent;
         right: 0;
         top: 1125px;
     }
 
-    #coloredShape3a {
+    #coloredShapeFrontpage3a {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #FD0079 transparent;
         right: 50px;
         top: 1175px;
     }
 
-    #coloredShape3b {
+    #coloredShapeFrontpage3b {
         width: 50px;
         height: 50px;
         right: 0;
         top: 1175px;
     }
 
-    #coloredShape4a {
+    #coloredShapeFrontpage4a {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #31C5F4 transparent;
         left: 50px;
         top: 1350px;
     }
 
-    #coloredShape4b {
+    #coloredShapeFrontpage4b {
         width: 50px;
         height: 50px;
         left: 0;
         top: 1350px;
     }
 
-    #coloredShape4c {
+    #coloredShapeFrontpage4c {
         display: none;
     }
 
-    #coloredShape5a {
+    #coloredShapeFrontpage5a {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #2EFEB3 transparent;
         right: 0;
         top: 1800px;
     }
 
-    #coloredShape5b {
+    #coloredShapeFrontpage5b {
         display: none;
     }
 
-    #coloredShape5c {
+    #coloredShapeFrontpage5c {
         display: none;
     }
 
-    #coloredShape6a {
+    #coloredShapeFrontpage6a {
         width: 50px;
         height: 50px;
         left: 0;
         top: 2200px;
     }
 
-    #coloredShape6b {
+    #coloredShapeFrontpage6b {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #FD0079 transparent;
         left: 50px;
         top: 2200px;
     }
 
-    #coloredShape7a {
+    #coloredShapeFrontpage7a {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #31C5F4 transparent;
         right: 50px;
         top: 2450px;
     }
 
-    #coloredShape7b {
+    #coloredShapeFrontpage7b {
         width: 50px;
         height: 50px;
         right: 0;
         top: 2450px;
     }
 
-    #coloredShape8 {
+    #coloredShapeFrontpage8 {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #2EFEB3 transparent;
         left: 0;
         top: 3400px;
     }
 
-    #coloredShape9a {
+    #coloredShapeFrontpage9a {
         display: none;
     }
 
-    #coloredShape9b {
+    #coloredShapeFrontpage9b {
         width: 50px;
         height: 50px;
         left: 0;
         top: 3450px;
     }
 
-    #coloredShape9c {
+    #coloredShapeFrontpage9c {
         border-width: 0 0 50px 50px;
         border-color: transparent transparent #FD0079 transparent;
         left: 50px;
         top: 3450px;
         transform: rotate(180deg);
+    }
+
+
+    /* COLORED SHAPES ARTISTER*/
+    #coloredShapeArtists1 {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid #2EFEB3;
+        left: 0;
+        top: 125px;
+    }
+
+    #coloredShapeArtists2 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 0;
+        top: 225px;
+    }
+
+    #coloredShapeArtists3a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        right: 50px;
+        top: 275px;
+    }
+
+    #coloredShapeArtists3b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 275px;
+    }
+
+    #coloredShapeArtists4a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        left: 50px;
+        top: 500px;
+    }
+
+    #coloredShapeArtists4b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 500px;
+    }
+
+    #coloredShapeArtists5a {
+        display: none;
+    }
+
+    #coloredShapeArtists5b {
+        display: none;
+    }
+
+    #coloredShapeArtists8 {
+        display: none;
+    }
+
+    #coloredShapeArtists9a {
+        display: none;
+    }
+
+    #coloredShapeArtists9b {
+        display: none;
+    }
+
+    #coloredShapeArtists9c {
+        display: none;
+    }
+
+
+    /* COLORED SHAPES PROGRAM*/
+    #coloredShapeProgram1 {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid #2EFEB3;
+        left: 0;
+        top: 225px;
+    }
+
+    #coloredShapeProgram2 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 0;
+        top: 1425px;
+    }
+
+    #coloredShapeProgram3a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        right: 50px;
+        top: 1475px;
+    }
+
+    #coloredShapeProgram3b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 1475px;
+    }
+
+    #coloredShapeProgram4a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        left: 50px;
+        top: 2700px;
+    }
+
+    #coloredShapeProgram4b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 2700px;
+    }
+
+    #coloredShapeProgram4c {
+        display: none;
+    }
+
+
+    /* COLORED SHAPES BAEREDYGTIGHED*/
+    #coloredShapeBaeredygtighed1 {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid #2EFEB3;
+        left: 0;
+        top: 100px;
+    }
+
+    #coloredShapeBaeredygtighed2 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 0;
+        top: 775px;
+    }
+
+    #coloredShapeBaeredygtighed3a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        right: 50px;
+        top: 825px;
+    }
+
+    #coloredShapeBaeredygtighed3b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 825px;
+    }
+
+    #coloredShapeBaeredygtighed4a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        left: 50px;
+        top: 875px;
+    }
+
+    #coloredShapeBaeredygtighed4b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 875px;
+    }
+
+    #coloredShapeBaeredygtighed4c {
+        display: none;
+    }
+
+    #coloredShapeBaeredygtighed5a {
+        display: none;
+    }
+
+    #coloredShapeBaeredygtighed5b {
+        display: none;
+    }
+
+    #coloredShapeBaeredygtighed6b {
+        display: none;
+    }
+
+    #coloredShapeBaeredygtighed7a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 50px;
+        top: 2980px;
+    }
+
+    #coloredShapeBaeredygtighed7b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 2980px;
+    }
+
+
+    /* COLORED SHAPES OM KOLD*/
+    #coloredShapeOmKOLD1 {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid #2EFEB3;
+        left: 0;
+        top: 150px;
+    }
+
+    #coloredShapeOmKOLD2 {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        right: 0;
+        top: 325px;
+    }
+
+    #coloredShapeOmKOLD3a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #FD0079 transparent;
+        right: 50px;
+        top: 375px;
+    }
+
+    #coloredShapeOmKOLD3b {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 375px;
+    }
+
+    #coloredShapeOmKOLD4a {
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #31C5F4 transparent;
+        left: 50px;
+        top: 550px;
+    }
+
+    #coloredShapeOmKOLD4b {
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 550px;
+    }
+
+    #coloredShapeOmKOLD4c {
+        display: none;
     }
 }
 

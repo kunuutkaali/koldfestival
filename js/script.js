@@ -3,16 +3,6 @@ import Snoweffect from "./snoweffect.js";
 import countdown from "./countdown.js";
 
 
-//get artists info:
-const checkIfArtistSelected = () =>{
-    if(window.location.search){
-        let artistId = window.location.search.replace('?artistid=','');
-    }else{
-
-    }
-}
-
-
 let modal = document.createElement('div');
 modal.style.position = "absolute";
 

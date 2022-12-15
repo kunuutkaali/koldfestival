@@ -3,9 +3,6 @@ import Snoweffect from "./snoweffect.js";
 import countdown from "./countdown.js";
 
 
-let modal = document.createElement('div');
-modal.style.position = "absolute";
-
 // create overlay and modal with selected artist
 const displaySelectedArtist = (artist) =>{
 
